@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩‍🎓 SheCodes Final Project</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        font-size: 27px;
+        font-family: "Times New Roman", Times, serif;
+        line-height: 1.7;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 70%;
+        border-radius: 5px;
+      }
+      button {
+        padding: 15px 30px;
+        background-color: #067ea7;
+        display: block;
+        color: #ffff;
+        font-size: 25px;
+        border-radius: 5px;
+        margin: 40px auto;
+        border: 0.8px solid #000;
+        font-family: Teko, Helvetica, Arial, sans-serif;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: all 200ms easy in out;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #079dcf;
+      }
+      .project {
+        padding: 50px 30px;
+        margin: 0 auto;
+        width: 900px;
+        color: black;
+        background: linear-gradient(#ffff, #fbf5ed);
+        border-radius: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>Why I like cycling</h1>
+      <h2>Some reasons to ride a bike every day</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/856/original/Woman-Riding-Rented-Bicycle-In-A-City.-Cycling-and-smiling-1200x628-facebook.jpg?1658921743"
+      />
+      <hr />
+      <p>
+        <strong><em>"Cycling</em></strong> is a low impact type of aerobic
+        activity that can benefit a person’s health and fitness. It is a useful
+        exercise that many people can incorporate into their daily lives as a
+        mode of transport, casual activity, or competitive sport. As it is
+        relatively easy to start and suitable for most fitness levels, it is a
+        popular physical activity.<br />Cycling is also a suitable activity for
+        most people and one that many individuals can add to their daily
+        routine. People can also take safety precautions to make cycling safer,
+        such as wearing safety gear, choosing a suitable bicycle, and cycling in
+        areas with less air pollution. "
+      </p>
+      <a
+        href="https://www.betterhealth.vic.gov.au/health/healthyliving/cycling-health-benefits"
+        target="_blank"
+      >
+        Lern more about cycling
+      </a>
+      <button>LET`S RIDE!</button>
+    </div>
+    <script>
+      function visitor() {
+        let name = prompt("What is your first name?");
+        let ride = prompt("Do you ride a bike?");
+
+        if (ride === "yes") {
+          alert(
+            "Thanks ," +
+              name +
+              ", we will send you information about different cycle routes!🚴 "
+          );
+        } else {
+          alert(
+            "Thanks ," +
+              name +
+              ", we will send you infommation how to start cycling!👨‍🎓 "
+          );
+        }
+      }
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", visitor);
+    </script>
+  </body>
+</html>
